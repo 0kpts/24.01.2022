@@ -1,8 +1,8 @@
-def replace_o(word: str) -> None:
-    try:
+def replace_o(word: str):
+    if "o" in word.lower():
         return word.lower().replace("o", "%")
-    except Exception as _ex:
-        return None
+    else:
+        return "No 'O' letter found!"
 
 if __name__ == "__main__":
-    print(replace_o("123ooo123"))
+    print(replace_o("123123"))
